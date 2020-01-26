@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  Dim 26 jan. 2020 à 20:20
+-- Généré le :  Dim 26 jan. 2020 à 21:46
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.19
 
@@ -59,10 +59,10 @@ CREATE TABLE `users` (
   `age` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` char(255) NOT NULL,
-  `remember_token` char(100) NOT NULL,
-  `email_verified_at` timestamp NOT NULL,
-  `created_at` timestamp NOT NULL,
-  `updated_at` timestamp NOT NULL
+  `remember_token` char(100) DEFAULT NULL,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
