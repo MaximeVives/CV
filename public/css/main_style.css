@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Color Theme Swatches in Hex */
+.Looking-For-The-Answer-1-hex { color: #BF414C; }
+.Looking-For-The-Answer-2-hex { color: #A63838; }
+.Looking-For-The-Answer-3-hex { color: #BF7373; }
+.Looking-For-The-Answer-4-hex { color: #F2DCDC; }
+.Looking-For-The-Answer-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in Hex */
+/* .Gamma-Tesis--1-hex { color: #29384D; }
+.Gamma-Tesis--2-hex { color: #3C556E; }
+.Gamma-Tesis--3-hex { color: #517394; }
+.Gamma-Tesis--4-hex { color: #FF283F; }
+.Gamma-Tesis--5-hex { color: #FFFDFA; } */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+    font-family: 'Poppins';
+}

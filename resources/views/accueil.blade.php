@@ -1,5 +1,4 @@
-@extends ('layouts\layout_accueil')
+@extends ('layouts\l_main_page')
 
 @section ('content')
-    <p>OUI</p>
 @endsection

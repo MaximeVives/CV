@@ -1,0 +1,132 @@
+
+.navbar_grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home_logo{
+    text-align: center;
+}
+
+#home_logo a img{
+    width: 40%;
+    height: 40%;
+    animation: logoAnimation 0.7s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
+}
+
+@keyframes logoAnimation{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: rotate(0) translateX(0);
+    }
+}
+
+nav{
+    display: inline-block;
+    animation: navAnimation 1s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
+}
+
+@keyframes navAnimation{
+    0%{
+        transform: translateY(-300px);
+    }
+    25%{
+        transform: translateY(-300px);
+    }
+    100%{
+        transform: rotate(0) translateY(0);
+    }
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 50px;
+}
+
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+}
+
+nav ul li a::after, .login .log::after{
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background: #A63838;
+    z-index: -1;
+    opacity: 1;
+    transition: transform .2s;
+}
+nav ul li a:hover::after, .login .log:hover::after{
+    transform: scaleX(1);
+}
+
+.login{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 50%;
+    align-items: center;
+    animation: loginAnimation 0.7s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
+}
+
+@keyframes loginAnimation{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: rotate(0) translateX(0);
+    }
+}
+
+.login div{
+    text-align: center;
+}
+
+.login a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.login .reg{
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #cc4651, #ac3b44);
+}
+
+.login .log{
+    position: relative;
+    padding: 5px;
+    color: #F2DCDC;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.login .reg:hover{
+    background: linear-gradient(145deg,#ac3b44, #cc4651);
+}
+
+.login .dezoom:hover{
+    transform: scale(0.95);
+} 
