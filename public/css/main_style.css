@@ -13,6 +13,7 @@
 .Gamma-Tesis--3-hex { color: #517394; }
 .Gamma-Tesis--4-hex { color: #FF283F; }
 .Gamma-Tesis--5-hex { color: #FFFDFA; } */
+/* Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*/
 
 
 *{
@@ -25,4 +26,7 @@
 body{
     background-color: rgb(35, 35, 35);
     font-family: 'Poppins';
+    overflow-x: hidden;
+    height: 100vh;
+    /* cursor: url('../cursor/finish/005-cursor.png'), auto; */
 }
