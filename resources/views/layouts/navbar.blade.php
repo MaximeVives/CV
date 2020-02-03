@@ -19,10 +19,18 @@
         <?php
             if (!(Auth::check())) {
         ?>
-        <div class="login">
+    <div class="dropdown">
+        <div onclick="dropdown()" class="burgerAnim"></div>
+    
+        <div class="login" id="myDropdown">
             <a class="log" href="/login">Log In</a>
-            <div class="dezoom"><a class="reg" href="/register">Sign-up</a></div>
+            <div class="dezoom">
+                <a class="reg" href="/register">Sign-up</a>
+            </div>
         </div>
+    </div>
+</div>
+
         <?php
             }
             else{
@@ -31,9 +39,10 @@
                 <p><a href="/logout">Disconnect</a></p><br>
                 <p>Bonjour <?php echo(Auth::user()->forename);?></p>
             </div>
+        </div>
                 <?php
             }
         ?>
-</div>
+
 
 

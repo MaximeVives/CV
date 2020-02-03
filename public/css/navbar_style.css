@@ -1,22 +1,18 @@
+/* NAVBAR CSS */
 
+/*ALL NAVBAR PARAMS*/
 .navbar_grid{
     display: grid;
     grid-template-columns: 20% 60% 20% ;
-    height: 30px;
     justify-content: center;
     align-items: center;
-    /* overflow-y: hidden; */
 }
+/*---------------------------------------*/
 
+/*LOGO LEFT*/
 #home_logo{
     text-align: center;
 }
-
-/* #home_logo a img{
-    width: 40%;
-    height: 40%;
-    animation: logoAnimation 0.7s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
-} */
 
 #home_logo a svg{
     padding: 10px;
@@ -33,7 +29,9 @@
         transform: rotate(0) translateX(0);
     }
 }
+/*---------------------------------------*/
 
+/*MIDDLE NAV*/
 nav{
     display: inline-block;
     animation: navAnimation 1s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
@@ -80,7 +78,7 @@ nav ul li a::after, .login .log::after{
     left: 0;
     right: 0;
     height: 2px; 
-    background: #A63838;
+    background: var(--brown);
     z-index: -1;
     opacity: 1;
     transition: transform .2s;
@@ -88,15 +86,12 @@ nav ul li a::after, .login .log::after{
 nav ul li a:hover::after, .login .log:hover::after{
     transform: scaleX(1);
 }
+/*---------------------------------------*/
 
-.login{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    height: 50%;
-    align-items: center;
-}
+/*RIGHT PART : LOGIN/REG/BURGER */
 
-.connected, .login{
+/*START ANIMATION*/
+.connected, .login, .burgerAnim{
     animation: loginAnimation 0.7s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
 }
 
@@ -109,41 +104,78 @@ nav ul li a:hover::after, .login .log:hover::after{
     }
 }
 
-.login div{
-    text-align: center;
-}
 
-.login a{
-    text-align: center;
-    justify-content: center;
+/*MAIN BLOC*/
+.dropdown{
+    display: flex;
     align-items: center;
-    font-size: 1.2em;
 }
 
-.login .reg{
-    color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
-    background: linear-gradient(145deg, #cc4651, #ac3b44);
+/*BURGER*/
+.burgerAnim{
+    margin: 0 50px;
+    max-width: 50px;
+}
+
+path{
+    stroke: white;
+}
+/*-------*/
+
+
+/*LOG/REG PART*/
+.login{
+    display: none;
+    align-items: center;
+    width: 250px;
+}
+
+.show{
+    display: flex;
+}
+
+.login .log, .login .dezoom{
+    text-align: center;
 }
 
 .login .log{
     position: relative;
     padding: 5px;
-    color: #F2DCDC;
+    color: #fff;
+    font-size: 12px;
     text-decoration: none;
     transition: 0.4s;
 }
 
-.login .reg:hover{
-    background: linear-gradient(145deg,#ac3b44, #cc4651);
+.login .dezoom{
+    display: flex;
+    justify-content: center;
+    height: 65%;
+    width: 50%;
+    margin-left: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #cc4651, #ac3b44);
 }
 
 .login .dezoom:hover{
     transform: scale(0.95);
-} 
+    background: linear-gradient(145deg, #ac3b44, #cc4651);
+}
 
+.login .dezoom .reg{
+    position: relative;
+    font-size: 1em;
+    color: white;
+}
+
+.login .dezoom .reg:hover{
+    background: linear-gradient(145deg,#ac3b44, #cc4651);
+}
+/*---------------------------------------*/
+/*CONNECTED PART*/
 .connected{
     text-align: right;
     margin-right: 40px;
 }
+/*---------------------------------------*/

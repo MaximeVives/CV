@@ -7,13 +7,15 @@
 .Looking-For-The-Answer-4-hex { color: #F2DCDC; }
 .Looking-For-The-Answer-5-hex { color: #0D0D0D; }
 
-/* Color Theme Swatches in Hex */
-/* .Gamma-Tesis--1-hex { color: #29384D; }
-.Gamma-Tesis--2-hex { color: #3C556E; }
-.Gamma-Tesis--3-hex { color: #517394; }
-.Gamma-Tesis--4-hex { color: #FF283F; }
-.Gamma-Tesis--5-hex { color: #FFFDFA; } */
-/* Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*/
+:root{
+    --red: #BF414C;
+    --brown: #A63838;
+    --pale: #BF7373;
+    --white: #F2DCDC;
+    --black: #0D0D0D;
+    --transparent_black: rgba(13, 13, 13, 0.4); 
+    --bgcolor: rgb(35, 35, 35);
+}
 
 
 *{
@@ -21,12 +23,16 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color: rgb(35, 35, 35);
+    background-color: var(--bgcolor);
     font-family: 'Poppins';
     overflow-x: hidden;
     height: 100vh;
+    background-image: url('../img/profil.png');
+    background-position: center;
+    background-size: cover;
     /* cursor: url('../cursor/finish/005-cursor.png'), auto; */
 }
