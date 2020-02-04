@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-/* Color Theme Swatches in Hex */
-.Looking-For-The-Answer-1-hex { color: #BF414C; }
-.Looking-For-The-Answer-2-hex { color: #A63838; }
-.Looking-For-The-Answer-3-hex { color: #BF7373; }
-.Looking-For-The-Answer-4-hex { color: #F2DCDC; }
-.Looking-For-The-Answer-5-hex { color: #0D0D0D; }
-
 :root{
     --red: #BF414C;
-    --brown: #A63838;
+    --yellow: #e9ad2a;
     --pale: #BF7373;
     --white: #F2DCDC;
     --black: #0D0D0D;
@@ -30,9 +23,9 @@ body{
     background-color: var(--bgcolor);
     font-family: 'Poppins';
     overflow-x: hidden;
-    height: 100vh;
     background-image: url('../img/profil.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* cursor: url('../cursor/finish/005-cursor.png'), auto; */
 }

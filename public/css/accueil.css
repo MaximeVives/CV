@@ -8,6 +8,18 @@ main{
 
 .description_me{
     display: inline-block;
+    animation: title_animation 1s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
+}
+
+@keyframes title_animation{
+    0%{
+        transform: translateX(-900px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .description_me article{
@@ -38,7 +50,7 @@ main{
     position: relative;
     top: -50px;
     left: 50px;
-    color: #adadad;
+    color: var(--yellow);
 }
 
 .description_me article button{
@@ -48,24 +60,16 @@ main{
     border: none;
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(145deg, #cc4651, #ac3b44);
+    background: linear-gradient(145deg, #e6ae06, #ffcf07);
+    cursor: pointer;
 }
 
 .description_me article button:hover{
-    background: linear-gradient(145deg, #ac3b44, #cc4651);
+    background: linear-gradient(145deg, #ffcf07, #e6ae06);
     box-shadow: 8px 8px 16px #1d1d1d, 
                 -8px -8px 16px #181818;
     transform: scale(0.95);
 }
 
-/* .description_me aside{
-    display: inline-block;
-    height: 300px;
-    width: 700px;
-} */
 
-/* .description_me aside img{
-    height: 100%;
-    width: 100%;
-} */
 

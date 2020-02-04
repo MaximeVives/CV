@@ -10,5 +10,20 @@ class mainController extends Controller
     {
         return view('accueil');
     }
+    
+    public function shop()
+    {
+        return view('shop');
+    }
+
+    public function portfolio()
+    {
+        return view('portfolio');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
 
 }

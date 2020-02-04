@@ -1,5 +1,9 @@
 @extends ('layouts\l_main_page')
 
+@section('pageName')
+    Neumorphism - ACCUEIL
+@endsection
+
 @section ('currentPage_css')
 <link rel="stylesheet" href="css/accueil.css">
 @endsection
@@ -14,11 +18,10 @@
             It is a practical application of most of my knowledge in HTML5/CSS3/JS/PHP/Laravel. 
             It thus serves as a bridge between my current knowledge and the knowledge I will get. 
             So I decided to create this site which will be a portfolio and a shop of my various projects.
-            <button class="neu_btn">Read More</button>
+            <a href="/about"><button class="neu_btn">Read More</button></a>
         </article>
     </div>
     <aside>
-        {{-- <img src="img/profil.jpg" alt="Picture of me"> --}}
     </aside>
     
 

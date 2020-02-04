@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'mainController@index');
+Route::get('/shop', 'mainController@shop');
+Route::get('/portfolio', 'mainController@portfolio');
+Route::get('/about', 'mainController@about');
 
 Auth::routes();
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');

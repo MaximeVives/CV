@@ -16,8 +16,8 @@
 
 #home_logo a svg{
     padding: 10px;
-    width: 40%;
-    height: 40%;
+    width: 120px;
+    height: 73px;
     animation: logoAnimation 0.7s 1 0s cubic-bezier(0.18, 0, 0.5, 1.0);
 }
 
@@ -78,7 +78,7 @@ nav ul li a::after, .login .log::after{
     left: 0;
     right: 0;
     height: 2px; 
-    background: var(--brown);
+    background: var(--yellow);
     z-index: -1;
     opacity: 1;
     transition: transform .2s;
@@ -113,8 +113,10 @@ nav ul li a:hover::after, .login .log:hover::after{
 
 /*BURGER*/
 .burgerAnim{
-    margin: 0 50px;
-    max-width: 50px;
+    margin: 0 25px;
+    min-width: 40px;
+    max-width: 40px;
+    cursor: pointer;
 }
 
 path{
@@ -153,14 +155,16 @@ path{
     height: 65%;
     width: 50%;
     margin-left: 20px;
-    padding: 10px 15px;
+    padding: 7px 12px;
     border-radius: 5px;
-    background: linear-gradient(145deg, #cc4651, #ac3b44);
+    background: linear-gradient(145deg, #e6ae06, #ffcf07);
+    cursor: pointer;
+    transform: scale(0.8);
 }
 
 .login .dezoom:hover{
     transform: scale(0.95);
-    background: linear-gradient(145deg, #ac3b44, #cc4651);
+    background: linear-gradient(145deg, #ffcf07, #e6ae06);
 }
 
 .login .dezoom .reg{
@@ -169,9 +173,9 @@ path{
     color: white;
 }
 
-.login .dezoom .reg:hover{
-    background: linear-gradient(145deg,#ac3b44, #cc4651);
-}
+/* .login .dezoom .reg:hover{
+    background: linear-gradient(145deg, #e6ae06, #ffcf07);
+} */
 /*---------------------------------------*/
 /*CONNECTED PART*/
 .connected{
@@ -179,3 +183,7 @@ path{
     margin-right: 40px;
 }
 /*---------------------------------------*/
+
+.connected .name_connected{
+    color: var(--yellow);
+}

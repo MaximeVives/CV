@@ -9,10 +9,10 @@
 
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/about">About</a></li>
         </ul>
     </nav>
 
@@ -37,7 +37,7 @@
                 ?>
             <div class="connected">
                 <p><a href="/logout">Disconnect</a></p><br>
-                <p>Bonjour <?php echo(Auth::user()->forename);?></p>
+                <p>Bonjour <span class="name_connected"><?php echo(Auth::user()->forename);?></span></p>
             </div>
         </div>
                 <?php
