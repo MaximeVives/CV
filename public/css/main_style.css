@@ -3,9 +3,19 @@
 :root{
     --red: #BF414C;
     --yellow: #e9ad2a;
+    --high_yellow: #ffcf07;
+    --low_yellow: #e6ae06;
     --pale: #BF7373;
     --white: #F2DCDC;
     --black: #0D0D0D;
+
+    --html: #f16529;
+    --css: #2965f1;
+    --js: #f7df1d;
+    --php: #777cb4;
+    --laravel: #fb503b;
+
+
     --transparent_black: rgba(13, 13, 13, 0.4); 
     --bgcolor: rgb(35, 35, 35);
 }

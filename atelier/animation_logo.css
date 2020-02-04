@@ -1,0 +1,83 @@
+/* .fa-html5{
+    animation: htmlanim 3s 0s infinite;
+}
+@keyframes htmlanim{
+    0%{
+        color: var(--html);
+    }
+    30%{
+        color: white;
+    }
+}
+
+.fa-css3-alt{
+    animation: cssanim 3s 0s infinite;
+}
+@keyframes cssanim{
+    0%{
+        color: white;
+    }
+    10%{
+        color: white;
+    }
+    15%{
+        color: var(--css);
+    }
+    45%{
+        color: white;
+    }
+}
+
+.fa-js-square{
+    animation: jsanim 3s 0s infinite;
+}
+@keyframes jsanim{
+    0%{
+        color: white;
+    }
+    25%{
+        color: white;
+    }
+    30%{
+        color: var(--js);
+    }
+    60%{
+        color: white;
+    }
+}
+
+
+.fa-php{
+    animation: phpanim 3s 0s infinite;
+}
+@keyframes phpanim{
+    0%{
+        color: white;
+    }
+    35%{
+        color: white;
+    }
+    45%{
+        color: var(--php);
+    }
+    75%{
+        color: white;
+    }
+}
+.fa-laravel{
+    animation: laraanim 3s 0s infinite;
+}
+@keyframes laraanim{
+    0%{
+        color: white;
+    }
+    55%{
+        color: white;
+    }
+    60%{
+        color: var(--laravel);
+    }
+    90%{
+        color: white;
+    }
+} */
