@@ -1,7 +1,7 @@
 @extends ('layouts\l_main_page')
 
 @section('pageName')
-    Neumorphism - ABOUT
+    Neumorphism - contact
 @endsection
 
 @section ('currentPage_css')
